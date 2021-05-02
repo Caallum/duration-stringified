@@ -1,5 +1,4 @@
-const createBar = (total, current, size = 40, line = '=', slider = '>') => {
-  let emptySpace = ` `;
+const createBar = (total, current, size = 40, line = '=', slider = '>', emptySpace = ' ') => {
   if (!total) throw new Error('Total value is either not provided or invalid');
   if (!current && current !== 0) throw new Error('Current value is either not provided or invalid');
   if (isNaN(total)) throw new Error('Total value is not an integer');
